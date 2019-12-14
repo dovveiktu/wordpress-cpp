@@ -1,0 +1,6 @@
+.gitignore
+
+CC := clang++
+CFLAGS := -x c++
+
+: *.cpp |> $(CC) $(CFLAGS) %f -o %o |> run
